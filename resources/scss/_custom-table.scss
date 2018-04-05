@@ -18,19 +18,17 @@
 
 .table-container {
 	width: 100%;
-	margin: auto;
+	margin: em(20) auto;
 	overflow-x:auto;
 	box-shadow: 0px 0px 10px 1px rgba(0,0,0,.2);
 	max-width: em(1170);
-	@media (min-width: 768px) {
-		width: 60vw;
-	}
 
-	@media (min-width: 992px) {
-		width: 70vw;
+	.table {
+		margin: 0 0 0 0;
+		background-color: white;
 	}
-
-	@media (min-width: 1200px) {
+	
+	@media (max-width: 992px) {
 		width: 70vw;
 	}
 
@@ -49,6 +47,9 @@
 
 	tr {
 		td {
+			a {
+				font-size: em(14); 
+			}
 			.button-wrap {
 				display: inline-block;
 			}
@@ -62,10 +63,6 @@
 		}
 	}
 }
-
-
-
-
 
 .custom-table {
 	background: white;

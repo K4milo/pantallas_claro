@@ -1,0 +1,27 @@
+body {
+	
+	.page-item.active .page-link {
+	    z-index: 1;
+	    color: #fff;
+	    background-color: $rorange;
+	    border-color: $rorange;
+	}
+
+	.page-link {
+		color: $rorange;
+	}
+
+	//MOdal Styles
+	.modal-dialog {
+		.modal-content {
+			.modal-header {
+				background-color: $red;
+				color: white;
+				border-radius: 0;
+			}
+			.modal-body {
+				margin-top: em(30);
+			}
+		}
+	}
+}

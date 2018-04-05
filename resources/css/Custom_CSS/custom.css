@@ -134,6 +134,23 @@ body {
     text-decoration: underline;
     cursor: pointer; }
 
+body .page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #f53402;
+  border-color: #f53402; }
+
+body .page-link {
+  color: #f53402; }
+
+body .modal-dialog .modal-content .modal-header {
+  background-color: #ef3829;
+  color: white;
+  border-radius: 0; }
+
+body .modal-dialog .modal-content .modal-body {
+  margin-top: 1.875em; }
+
 .navigation {
   width: 100%;
   background-color: #ef3829; }
@@ -435,17 +452,14 @@ body {
 
 .table-container {
   width: 100%;
-  margin: auto;
+  margin: 1.25em auto;
   overflow-x: auto;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
   max-width: 73.125em; }
-  @media (min-width: 768px) {
-    .table-container {
-      width: 60vw; } }
-  @media (min-width: 992px) {
-    .table-container {
-      width: 70vw; } }
-  @media (min-width: 1200px) {
+  .table-container .table {
+    margin: 0 0 0 0;
+    background-color: white; }
+  @media (max-width: 992px) {
     .table-container {
       width: 70vw; } }
   .table-container tbody {
@@ -453,6 +467,8 @@ body {
   .table-container thead tr th {
     background-color: #b7202e;
     color: white; }
+  .table-container tr td a {
+    font-size: 0.875em; }
   .table-container tr td .button-wrap {
     display: inline-block; }
   .table-container .add-button {

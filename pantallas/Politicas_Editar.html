@@ -1,22 +1,61 @@
-<html lang="es"><head>
-    <title>G2N Claro WEB</title>
-    <!-- Le styles -->
-    <link rel="stylesheet" href="../resources/css/bootstrap/dist/css/bootstrap.min.css">
-
-    <!-- CUSTOM STYLES -->
-    <link rel="stylesheet" type="text/css" href="../resources/css/custom_CSS/custom.css">
-
-    <!-- FONTS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="../resources/css/bootstrap/ico/favicon.ico">
-
-  </head>
-  <body class="">
-    <div id="root"><div data-reactroot="" class="container"><nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="#">Claro</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNavDropdown"><ul class="navbar-nav"><li class="nav-item active"><a class="nav-link" href="#"><!-- react-text: 11 -->Home <!-- /react-text --><span class="sr-only">(current)</span></a></li><li class="nav-item"><a class="nav-link" href="/politicas">Politicas</a></li><li class="nav-item"><a class="nav-link" href="/conciliaciones">Conciliaciones</a></li><li class="nav-item"><a href="#" class="nav-link">Cerrar Sesión</a></li></ul></div></nav><div class="container"><div class="form-group"><label for="ID">ID</label><br><input type="text" id="id" value="2" disabled=""><small id="idHelp" class="form-text text-muted">el ID no puede modificarse</small></div><div class="form-group"><label for="nombre">Nombre</label><input type="text" id="nombre" class="form-control form-control-lg" value="Segunda politica" placeholder="Digite un nombre de política"><small id="nombreHelp" class="form-text text-muted">Que sea descriptivo pero breve</small></div><div class="form-group"><label for="descripcion">Descripción</label><input type="text" id="descripcion" class="form-control form-control-lg" value="descripcion de la segunda politica" placeholder="Digite una descripcion de la política"><small id="descripcionHelp" class="form-text text-muted">Defina para la política</small></div><div class="form-group"><label for="objetivo">Objetivo</label><input type="text" id="objetivo" class="form-control form-control-lg" value="objetivo de la segunda politica" placeholder="Digite el objetivo de la política"><small id="objetivoHelp" class="form-text text-muted">Defina para la política</small></div><div class="form-group"><a class="btn btn-warning" href="/politicas">Regresar</a><!-- react-text: 139 -->&nbsp;&nbsp;&nbsp;<!-- /react-text --><button class="btn btn-primary" data-dismiss="modal">Grabar</button></div></div></div></div>
-    <script src="../resources/css/bootstrap/dist/js/jquery-3.3.1.js"></script>
-    <script src="../resources/css/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../resources/css/bootstrap/dist/js/bundle.min.js"></script>
-
-</body></html>
+<html lang="es">
+   <head>
+      <title>G2N Claro WEB</title>
+      <!-- Le styles -->
+      <link rel="stylesheet" href="../resources/css/bootstrap/dist/css/bootstrap.min.css">
+      <!-- CUSTOM STYLES -->
+      <link rel="stylesheet" type="text/css" href="../resources/css/custom_CSS/custom.css">
+      <!-- FONTS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+      <!-- Fav and touch icons -->
+      <link rel="shortcut icon" href="../resources/css/bootstrap/ico/favicon.ico">
+   </head>
+   <body class="">
+      <div id="root">
+         <div data-reactroot="" class="container-fluid">
+            <div class="row">
+                <nav class="navigation">
+                    <div class="container">
+                        <a class="logo" href="#">Claro</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="main--menu" id="navbarNavDropdown">
+                            <ul class="navigation-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">
+                                        <!-- react-text: 11 -->Home 
+                                        <!-- /react-text -->
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/politicas">Politicas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/conciliaciones">Conciliaciones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Cerrar Sesión</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+               <div class="form-group"><label for="ID">ID</label><br><input type="text" id="id" value="2" disabled=""><small id="idHelp" class="form-text text-muted">el ID no puede modificarse</small></div>
+               <div class="form-group"><label for="nombre">Nombre</label><input type="text" id="nombre" class="form-control form-control-lg" value="Segunda politica" placeholder="Digite un nombre de política"><small id="nombreHelp" class="form-text text-muted">Que sea descriptivo pero breve</small></div>
+               <div class="form-group"><label for="descripcion">Descripción</label><input type="text" id="descripcion" class="form-control form-control-lg" value="descripcion de la segunda politica" placeholder="Digite una descripcion de la política"><small id="descripcionHelp" class="form-text text-muted">Defina para la política</small></div>
+               <div class="form-group"><label for="objetivo">Objetivo</label><input type="text" id="objetivo" class="form-control form-control-lg" value="objetivo de la segunda politica" placeholder="Digite el objetivo de la política"><small id="objetivoHelp" class="form-text text-muted">Defina para la política</small></div>
+               <div class="form-group">
+                  <a class="btn btn-warning" href="/politicas">Regresar</a><!-- react-text: 139 -->&nbsp;&nbsp;&nbsp;<!-- /react-text --><button class="btn btn-primary" data-dismiss="modal">Grabar</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="../resources/css/bootstrap/dist/js/jquery-3.3.1.js"></script>
+      <script src="../resources/css/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="../resources/css/bootstrap/dist/js/bundle.min.js"></script>
+   </body>
+</html>
