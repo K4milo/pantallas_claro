@@ -1,6 +1,6 @@
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: $type;
 	background: #F3F2F2;
 }
 
@@ -13,7 +13,7 @@ body {
 .loginWrapper {
 	width: 100vw;
 	height: 100vh;
-	background:  linear-gradient(rgba(#213E6E,.9),rgba(#213E6E,.9)), url('images/back-login.png') center / cover ;
+	background: linear-gradient(rgba($red,.7), $red-dk), url(images/back-login.png) center/cover;
 }
 
 
@@ -32,6 +32,7 @@ body {
 .loginBox {
 	background: white;
 	width: 80%;
+	border-top: 4px solid $red;
 	animation: traslada 1s forwards cubic-bezier(0.175, 0.885, 0.320, 1.275);;
 	@media (min-width: 576px) { 
 		width: 350px;
@@ -51,8 +52,10 @@ body {
 
 	.title-login {
 		text-align: center;
-		font-size: 24px;
-		color: $color-terciario;
+		font-size: em(24);
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $red;
 		margin-bottom: 1rem;
 		animation: traslada 1s;
 	}
@@ -63,15 +66,13 @@ body {
 	}
 
 	input[type="text"], input[type="password"] {
-		background: #f6f6f6;
-		border: none;
-		margin: 0;
-		margin-bottom: 1rem;
 		width: 100%;
-		font-size: 1rem;
-		color: rgba(0,0,0,.5);
-		
-
+		border: 1px solid $grey-lt;
+		padding: em(7) em(10);
+		font-size: em(20);
+		margin-bottom: em(12);
+		color: $grey-txt;
+		@include thePlaceholder ($grey-lt);
 	}
 
 	input[type="password"] {
@@ -98,16 +99,32 @@ body {
 	}
 
 	input[type="submit"] {
-		background: $color-secundario;
+		background: $rorange;
+		width: 100%;
+		font-weight: 700;
 		color: white;
 		text-align: center;
 		display: block;
 		margin: auto;
 		border: none;
-		padding: .5rem 2rem;
-		margin-top: .5rem;
+		padding: em(10);
+		margin-top: em(16);
+	}
 
-		
+	.btn {
+		&.btn-danger {
+			background: $red;
+			width: 100%;
+			font-weight: 700;
+			font-size: em(18);
+			color: white;
+			text-align: center;
+			display: block;
+			margin: auto;
+			border: none;
+			padding: em(8) em(10);
+			margin-top: em(16);
+		}
 	}
 
 	.rec-cont {

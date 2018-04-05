@@ -1,6 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #F3F2F2; }
 
 .input-group {
@@ -10,7 +11,7 @@ body {
 .loginWrapper {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(33, 62, 110, 0.9), rgba(33, 62, 110, 0.9)), url("images/back-login.png") center/cover; }
+  background: linear-gradient(rgba(239, 56, 41, 0.7), #b7202e), url(images/back-login.png) center/cover; }
 
 @keyframes traslada {
   50% {
@@ -23,6 +24,7 @@ body {
 .loginBox {
   background: white;
   width: 80%;
+  border-top: 4px solid #ef3829;
   animation: traslada 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
   padding: 2rem;
   margin: auto;
@@ -39,21 +41,34 @@ body {
     animation: traslada 1s; }
   .loginBox .title-login {
     text-align: center;
-    font-size: 24px;
-    color: #3E68AF;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ef3829;
     margin-bottom: 1rem;
     animation: traslada 1s; }
   .loginBox .button-green {
     background: #7FAC4E;
     color: white; }
   .loginBox input[type="text"], .loginBox input[type="password"] {
-    background: #f6f6f6;
-    border: none;
-    margin: 0;
-    margin-bottom: 1rem;
     width: 100%;
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.5); }
+    border: 1px solid #ccc;
+    padding: 0.4375em 0.625em;
+    font-size: 1.25em;
+    margin-bottom: 0.75em;
+    color: #818181; }
+    .loginBox input[type="text"]::-webkit-input-placeholder, .loginBox input[type="password"]::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #ccc; }
+    .loginBox input[type="text"]::-moz-placeholder, .loginBox input[type="password"]::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #ccc; }
+    .loginBox input[type="text"]:-ms-input-placeholder, .loginBox input[type="password"]:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #ccc; }
+    .loginBox input[type="text"]:-moz-placeholder, .loginBox input[type="password"]:-moz-placeholder {
+      /* Firefox 18- */
+      color: #ccc; }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .loginBox input[type="password"] {
       padding: 15px 0; } }
@@ -68,14 +83,28 @@ body {
     width: 48px;
     height: 48px; }
   .loginBox input[type="submit"] {
-    background: #7FAC4E;
+    background: #f53402;
+    width: 100%;
+    font-weight: 700;
     color: white;
     text-align: center;
     display: block;
     margin: auto;
     border: none;
-    padding: .5rem 2rem;
-    margin-top: .5rem; }
+    padding: 0.625em;
+    margin-top: 1em; }
+  .loginBox .btn.btn-danger {
+    background: #ef3829;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.125em;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 0.5em 0.625em;
+    margin-top: 1em; }
   .loginBox .rec-cont {
     height: 0;
     overflow: hidden;
@@ -104,6 +133,28 @@ body {
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer; }
+
+.navigation {
+  width: 100%;
+  background-color: #ef3829; }
+  .navigation .logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6.125em;
+    height: 3.125em;
+    margin: 1em;
+    background: url(../images/logo-claro-blanco.svg) no-repeat;
+    text-indent: -9999999px; }
+  .navigation .main--menu {
+    display: inline-block;
+    vertical-align: middle; }
+    .navigation .main--menu .navigation-nav {
+      margin: 0; }
+      .navigation .main--menu .navigation-nav li {
+        display: inline-block; }
+        .navigation .main--menu .navigation-nav li a {
+          color: white;
+          font-size: 1.125em; }
 
 .header-logo {
   background: #1b335a;
@@ -372,11 +423,22 @@ body {
   margin: 0;
   margin-left: 15px; }
 
+.head-table {
+  padding-top: 1.25em; }
+  .head-table h2 {
+    color: #ef3829;
+    font-weight: bold;
+    font-size: 2.5em; }
+  .head-table input[type="text"] {
+    padding: 0.3125em;
+    width: 60%; }
+
 .table-container {
   width: 100%;
   margin: auto;
   overflow-x: auto;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  max-width: 73.125em; }
   @media (min-width: 768px) {
     .table-container {
       width: 60vw; } }
@@ -386,14 +448,13 @@ body {
   @media (min-width: 1200px) {
     .table-container {
       width: 70vw; } }
-  @media (min-width: 1500px) {
-    .table-container {
-      min-width: 75vw; } }
-  @media (min-width: 1500px) {
-    .table-container {
-      min-width: 95%; } }
   .table-container tbody {
     width: 100%; }
+  .table-container thead tr th {
+    background-color: #b7202e;
+    color: white; }
+  .table-container tr td .button-wrap {
+    display: inline-block; }
   .table-container .add-button {
     background: #7FAC4E; }
     .table-container .add-button a {

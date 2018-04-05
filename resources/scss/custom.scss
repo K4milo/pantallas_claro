@@ -1,13 +1,15 @@
-@import "_variables.scss";
-@import "_login.scss";
-@import "_main-menu.scss";
-@import "_info-bar.scss";
-@import "_custom-table.scss";
-@import "_bread_custom.scss";
-@import "_block-usuario.scss";
-@import "_block-perfil.scss";
-@import "_block-admin-form.scss";
-@import "_custom-tabs.scss";
+@import "_variables";
+@import "_mixins";
+@import "_login";
+@import "_header";
+@import "_main-menu";
+@import "_info-bar";
+@import "_custom-table";
+@import "_bread_custom";
+@import "_block-usuario";
+@import "_block-perfil";
+@import "_block-admin-form";
+@import "_custom-tabs";
 
 
 .btn-primary {
