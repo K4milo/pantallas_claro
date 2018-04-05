@@ -153,7 +153,8 @@ body .modal-dialog .modal-content .modal-body {
 
 .navigation {
   width: 100%;
-  background-color: #ef3829; }
+  background-color: #ef3829;
+  margin-bottom: 2.1875em; }
   .navigation .logo {
     display: inline-block;
     vertical-align: middle;
@@ -597,6 +598,15 @@ body .modal-dialog .modal-content .modal-body {
 
 .modal-footer {
   background: white; }
+
+.form-wrapper {
+  border-radius: 1.25em;
+  padding: 1.25em 1.875em;
+  max-width: 45em;
+  display: block;
+  margin: 1.875em auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.75em #ccc; }
 
 .content-nav-tabs {
   background: white;
