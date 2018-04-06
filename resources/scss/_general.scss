@@ -1,14 +1,19 @@
 body {
 	
+	//Button styles
+	.btn-primary {
+		background-color: $marine !important;
+	}
+
 	.page-item.active .page-link {
 	    z-index: 1;
 	    color: #fff;
-	    background-color: $rorange;
-	    border-color: $rorange;
+	    background-color: $marine;
+	    border-color: $marine;
 	}
 
 	.page-link {
-		color: $rorange;
+		color: $marine;
 	}
 
 	//MOdal Styles

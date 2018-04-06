@@ -134,14 +134,17 @@ body {
     text-decoration: underline;
     cursor: pointer; }
 
+body .btn-primary {
+  background-color: #0097ab !important; }
+
 body .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #f53402;
-  border-color: #f53402; }
+  background-color: #0097ab;
+  border-color: #0097ab; }
 
 body .page-link {
-  color: #f53402; }
+  color: #0097ab; }
 
 body .modal-dialog .modal-content .modal-header {
   background-color: #ef3829;
@@ -466,7 +469,7 @@ body .modal-dialog .modal-content .modal-body {
   .table-container tbody {
     width: 100%; }
   .table-container thead tr th {
-    background-color: #ef3829;
+    background-color: #0097ab;
     color: white; }
   .table-container tr td a {
     font-size: 0.875em; }
